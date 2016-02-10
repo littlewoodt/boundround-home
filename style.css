@@ -1,0 +1,45 @@
+body {
+	font-family: 'Signika', sans-serif;
+}
+
+.hero {
+	background-image: url(http://www.fillmurray.com/1500/400) no-repeat center center fixed;
+	height: 235px; 
+	background: #fefefe;
+	background-image: url(http://www.fillmurray.com/1500/400);
+}
+
+.hero-container {
+	color: white;
+	text-align: center;
+}
+
+.small-hero-pic {
+	width: 100%;
+}
+
+.br-container {
+	width: 80%;
+}
+.logo {
+	width: 16.66%;
+}
+.logo img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+h1.logo {
+	display: inline-block;
+}
+
+@media (max-width: 992px) {
+	.br-container {
+		width: 95%;
+	}
+}
+
