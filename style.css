@@ -3,77 +3,7 @@
 body {
   font-family: 'Signika', sans-serif;
   font-weight: 300;
-}
-
-.navbar-wrapper {
-    position:absolute;
-    top: 0;
-    z-index: 20;
-}
-
-.navbar {
-    top: 0;
-    z-index: 10;
-    background: transparent;
-}
-
-.br-nav li {
-  display: inline-block;
-}
-/*
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.logo img {
-    position:absolute;
-    top: 20px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    z-index:10;
-}
-*/
-
-.logo {
-  position:absolute;
-  top: 20px;
-  left: 20px;
-  width: 16.66%;
-  z-index: 10;
-}
-
-.logo img {
-  width: 100%;
-}
-
-.navbar li a {
-  color: white;
-}
-
-.navbar li a:hover {
-  opacity: 0.5;
-}
-
-.br-container {
-  width: 80%;
-}
-
-.small-hero-pic {
-  width: 100%;
-}
-
-.item img {
-  width: 100%;
-}
-
-.br-container {
-  width: 80%;
-}
-
-.small-hero-pic {
-  width: 100%;
+  background-color: #eaeaea;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,11 +11,148 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-.br-heading {
-  padding: 36px;
+.br-container {
+  width: 80%;
 }
 
-/* carousel */
+
+/*   navigation   */
+
+.navbar-wrapper {
+    position:absolute;
+    top: 0;
+    z-index: 20;
+}
+.navbar {
+    top: 0;
+    z-index: 10;
+    background: transparent;
+}
+.br-nav li {
+  display: inline-block;
+}
+.logo {
+  position:absolute;
+  top: 20px;
+  left: 20px;
+  width: 16.66%;
+  z-index: 10;
+}
+.logo img {
+  width: 100%;
+}
+.navbar li a {
+  color: white;
+}
+.navbar li a:hover {
+  opacity: 0.5;
+}
+
+
+
+/*   br-heading   */
+
+.br-heading {
+  padding: 36px;
+
+}
+
+
+
+/*   br-card   */
+
+div.br-card {
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 2px 2px rgba(0,0,0,.25);
+  z-index: 100;
+}
+
+.br-image img, .card-footer, .card-text {
+  width: 100%;
+}
+
+.card-text {
+	width: 100%:;
+	color: #ff815b;
+  background: #fff;
+  padding: 15px;
+}
+
+.card-footer {
+  line-height: 33.333%;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+  font-size: 1.3em;
+}
+
+.stories {
+  color: #c4c4c4;
+  text-align: left;
+  float: left;
+}
+
+.ratings {
+  color: #c4c4c4;
+  text-align: right;
+  float: right; 
+}
+
+.ratings i {
+  padding-right: 5px;
+  margin-top: -7px;
+}
+
+.stories i {
+  padding-left: 5px;
+  margin-top: -7px;
+}
+
+.card-pic {
+  border-radius: 15px 15px 0 0;
+}
+
+
+
+
+
+
+/*   Carousel Bootstrap   */
+ 
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/*   Carousel changes  */
+
+
+.item img {
+  width: 100%;
+}
 
 .carousel {
     position: relative;
@@ -129,50 +196,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px;
 }
 
-/* br-card */
-* {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-body {
-  background-color: #eaeaea;
-}
-
-.br-container {
-  width: 80%;
-}
-
-.br-card {
-  background-color: #ffffff;
-  border-radius: 3.333%;
-  border: 1px solid black;
-  text-align: center;
-  padding-bottom: 15px;
-}
-
-.br-card .br-image img, .br-card .card-footer, .br-card .card-text {
-  width: 100%;
-  border: 1px solid pink;
-  padding: 15px;
-}
-
-.br-card .card-footer {
-  padding: 15px;
-  border: 1px solid orange;
-}
-.number-places {
-  text-align: left;
-  float: left;
-}
-
-.ratings {
-  text-align: right;
-  float: right;
-}
 
 
-/* media queries */
+
+/*   media queries   */
 
 @media (max-width: 992px) {
   .br-container {
